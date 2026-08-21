@@ -127,6 +127,21 @@
   .acc-list li b{color:var(--carbon);font-weight:600;}
   @media (max-width:620px){ .acc-inner{padding:0 20px 22px 20px;} }
 
+  /* RESULTS — WIN TILES */
+  .win-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:4px 0 0;}
+  .win{border:1px solid var(--line);border-radius:12px;padding:20px 20px 18px;background:var(--white);transition:transform .2s, border-color .2s;}
+  .win:hover{transform:translateY(-3px);border-color:rgba(255,117,0,0.45);}
+  .win-top{display:flex;align-items:baseline;gap:10px;}
+  .win-val{font-family:'Space Grotesk';font-weight:700;font-size:2rem;line-height:1;color:var(--carbon);letter-spacing:-0.01em;}
+  .win-dir{font-size:0.9rem;font-weight:700;}
+  .win-dir.up{color:#1FA463;} .win-dir.down{color:#1FA463;} .win-dir.neutral{color:var(--orange);}
+  .win-label{font-size:0.68rem;letter-spacing:0.13em;text-transform:uppercase;color:var(--muted);font-family:'Space Grotesk';font-weight:600;margin-top:8px;}
+  .win-title{font-family:'Space Grotesk';font-weight:600;font-size:0.98rem;color:var(--carbon);margin:14px 0 6px;}
+  .win p{margin:0;color:var(--muted);font-size:0.9rem;line-height:1.55;}
+  .method-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px;}
+  .method-chip{background:var(--orange-soft);color:var(--orange-deep);border-radius:100px;padding:5px 11px;font-size:0.72rem;font-weight:600;font-family:'Space Grotesk';letter-spacing:0.01em;}
+  @media (max-width:660px){ .win-grid{grid-template-columns:1fr;} }
+
   /* CORE VALUES */
   .values-sec{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .val-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
@@ -175,7 +190,7 @@
       <p class="hero-sub">A U.S. enterprise account runs smoothest when someone can speak the client's language and the team's language in the same breath. That translation is what I do — and every result below has a person attached to it.</p>
       <div class="chips">
         <div class="chip"><b>450+</b> FTE led</div>
-        <div class="chip"><b>10 of 25</b> promoted</div>
+        <div class="chip"><b>9 of 25</b> promoted</div>
         <div class="chip"><b>106%</b> BPE vs 30% target</div>
       </div>
       <div class="cta-row">
@@ -260,13 +275,42 @@
           <span class="acc-sign"></span>
         </button>
         <div class="acc-body"><div class="acc-inner">
-          <p class="acc-lead">Verified outcomes as the senior account manager owning a U.S. enterprise account.</p>
-          <ul class="acc-list">
-            <li><b>Conversion 26% → 34.45%</b> — same team, rebuilt operating rhythm: coaching cadence, call structure, accountability.</li>
-            <li><b>106% BPE attainment</b> against a 30% target — more than triple the goal, and repeatable because it's a method, not a lucky quarter.</li>
-            <li><b>$3M+ quarterly gross bookings · ~81% sustained ROI</b> — inside a P&amp;L I'm personally accountable for.</li>
-            <li>Efficiency held <b>without</b> burning the team — because staffing, coaching and cost are one decision, not three.</li>
-          </ul>
+          <p class="acc-lead">Verified outcomes as the senior account manager owning a U.S. enterprise account — each one tied to the Lean Six Sigma method behind it.</p>
+          <div class="win-grid">
+
+            <div class="win">
+              <div class="win-top"><span class="win-val">3.6x</span><span class="win-dir up">&#8599;</span></div>
+              <p class="win-label">ROI on client investments</p>
+              <p class="win-title">Proactive onboarding, end-to-end</p>
+              <p>ROI started at 81%. Rather than patch individual complaints, I redesigned onboarding end-to-end — client profiling, rate/pricing structure, defined commitments, process improvements, and new measures rolled out from supporting areas. ROI reached 360%.</p>
+              <div class="method-chips"><span class="method-chip">VoC</span><span class="method-chip">VoN</span><span class="method-chip">CTX Measures</span><span class="method-chip">DMAIC</span></div>
+            </div>
+
+            <div class="win">
+              <div class="win-top"><span class="win-val">-5%</span><span class="win-dir down">&#8600;</span></div>
+              <p class="win-label">Attrition, QoQ</p>
+              <p class="win-title">Coffee talks and collective problem-solving</p>
+              <p>Cut attrition 5% QoQ by opening regular &lsquo;coffee talk&rsquo; spaces — working with staff on what agents actually needed, then aligning it to client objectives. Started with emotional-salary initiatives, then layered in incentives, time off, tangible rewards and public recognition.</p>
+              <div class="method-chips"><span class="method-chip">VoE</span><span class="method-chip">Kano Model</span></div>
+            </div>
+
+            <div class="win">
+              <div class="win-top"><span class="win-val">450+</span><span class="win-dir neutral">&mdash;</span></div>
+              <p class="win-label">FTE managed</p>
+              <p class="win-title">From 3 agents to 60</p>
+              <p>One sales account scaled from 3 agents to 60 under my leadership — part of a footprint that now totals 450+ FTE. Growth like that holds only if the team structure keeps pace with headcount, not the other way around.</p>
+              <div class="method-chips"><span class="method-chip">Process Capability</span></div>
+            </div>
+
+            <div class="win">
+              <div class="win-top"><span class="win-val">9/25</span><span class="win-dir up">&#8599;</span></div>
+              <p class="win-label">Team members promoted</p>
+              <p class="win-title">Weekly learning, real-time feedback</p>
+              <p>9 of 25 were promoted because growth was built into the week, not saved for annual reviews. Weekly learning sessions and real-time feedback — in the moment, not weeks later — helped people work from motivation toward their goals, not just toward a score.</p>
+              <div class="method-chips"><span class="method-chip">Control Phase</span><span class="method-chip">VoE</span></div>
+            </div>
+
+          </div>
         </div></div>
       </div>
 
@@ -279,7 +323,7 @@
         <div class="acc-body"><div class="acc-inner">
           <p class="acc-lead">The metric I track hardest isn't on the client scorecard.</p>
           <ul class="acc-list">
-            <li><b>10 of 25</b> team members promoted under my leadership — deliberate development, not a side effect of good performance.</li>
+            <li><b>9 of 25</b> team members promoted under my leadership — deliberate development, not a side effect of good performance.</li>
             <li>I built an <b>Extended Learning Program</b> on my own initiative: performance analytics and Lean Six Sigma — PSP, Outlier Management, VoC/VoE/VoB, DPMO, Pareto, Gaussian analysis for real-time KPI management.</li>
             <li>Eight years in, I still remember what the floor feels like — so I try to keep the standard high without the person feeling it drop.</li>
           </ul>
