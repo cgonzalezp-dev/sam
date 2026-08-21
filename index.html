@@ -150,6 +150,30 @@
   .case-lbl{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--orange);font-family:'Space Grotesk';font-weight:700;margin:0 0 5px;}
   .case-block p{margin:0;color:var(--muted);font-size:0.93rem;line-height:1.6;}
 
+  /* ALWAYS LEARNING */
+  .learn-list{display:flex;flex-direction:column;}
+  .learn-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 0;border-top:1px solid var(--line);}
+  .learn-row:first-child{border-top:none;}
+  .learn-t{margin:0;font-family:'Space Grotesk';font-weight:600;font-size:0.98rem;color:var(--carbon);}
+  .learn-m{margin:3px 0 0;font-size:0.82rem;color:var(--muted);}
+  .learn-tag{flex-shrink:0;font-family:'Space Grotesk';font-weight:600;font-size:0.72rem;letter-spacing:0.03em;padding:5px 11px;border-radius:100px;background:var(--orange-soft);color:var(--orange-deep);white-space:nowrap;}
+  .learn-tag.done{background:#EAF4EE;color:#1FA463;}
+
+  /* HUMAN FACTOR */
+  .human-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .human-card{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--white);}
+  .human-t{margin:0 0 6px;font-family:'Space Grotesk';font-weight:700;font-size:0.95rem;color:var(--orange-deep);}
+  .human-card p{margin:0;color:var(--muted);font-size:0.9rem;line-height:1.55;}
+  @media (max-width:660px){ .human-grid{grid-template-columns:1fr;} }
+
+  /* RECOMMENDATIONS */
+  .rec-sec{background:var(--white);border-top:1px solid var(--line);}
+  .rec{max-width:720px;margin:4px 0 0;border-left:3px solid var(--orange);padding:4px 0 4px 22px;}
+  .rec blockquote{margin:0;font-size:1.12rem;line-height:1.6;color:var(--carbon);font-weight:500;}
+  .rec figcaption{margin-top:16px;display:flex;flex-direction:column;gap:2px;}
+  .rec-name{font-family:'Space Grotesk';font-weight:700;color:var(--carbon);}
+  .rec-role{font-size:0.82rem;color:var(--muted);}
+
   /* CORE VALUES */
   .values-sec{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .val-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
@@ -184,6 +208,7 @@
       <li><a href="#bridge">The Bridge</a></li>
       <li><a href="#talking">Track Record</a></li>
       <li><a href="#values">Values</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -250,7 +275,7 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Track Record — expand what you want to explore</p>
-      <h2>Four themes. Open any one, and the detail is there.</h2>
+      <h2>Six themes. Open any one, and the detail is there.</h2>
       <p>Built to walk through live. Collapsed by default — expand the topics that matter for this conversation.</p>
     </div>
 
@@ -364,6 +389,40 @@
           </div>
         </div></div>
       </div>
+
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-num">05</span>
+          <span class="acc-title">Always learning — what I'm building next</span>
+          <span class="acc-sign"></span>
+        </button>
+        <div class="acc-body"><div class="acc-inner">
+          <p class="acc-lead">Growth isn't a phase I finished — it's scheduled. Here's what's on the roadmap, sequenced deliberately.</p>
+          <div class="learn-list">
+            <div class="learn-row"><div><p class="learn-t">Portuguese</p><p class="learn-m">IBRACO</p></div><span class="learn-tag">In progress</span></div>
+            <div class="learn-row"><div><p class="learn-t">Finance Specialization → MBA</p><p class="learn-m">Sequenced, deliberate</p></div><span class="learn-tag">Planned</span></div>
+            <div class="learn-row"><div><p class="learn-t">Lean Six Sigma — Yellow Belt</p><p class="learn-m">COPC</p></div><span class="learn-tag done">2024</span></div>
+            <div class="learn-row"><div><p class="learn-t">360° Leadership Program</p><p class="learn-m">GIRA Consultoría</p></div><span class="learn-tag done">2025</span></div>
+            <div class="learn-row"><div><p class="learn-t">Sales Strategy &amp; Performance</p><p class="learn-m">LinkedIn Learning</p></div><span class="learn-tag done">2026</span></div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-num">06</span>
+          <span class="acc-title">The human factor — what keeps me trained to lead</span>
+          <span class="acc-sign"></span>
+        </button>
+        <div class="acc-body"><div class="acc-inner">
+          <p class="acc-lead">The habits that keep me trained to lead — not a break from the work, the reason I can keep doing it.</p>
+          <div class="human-grid">
+            <div class="human-card"><p class="human-t">Family</p><p>Recently married; family comes first.</p></div>
+            <div class="human-card"><p class="human-t">Running</p><p>Recreational runner — how I carry pressure without carrying it home.</p></div>
+            <div class="human-card"><p class="human-t">Languages</p><p>Native Spanish, professional English, learning Portuguese.</p></div>
+          </div>
+        </div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -397,6 +456,22 @@
         <p>Strategy sets up the win; urgency demands a call. I plan so that when the moment comes, the fast decision is already an informed one.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="rec-sec" id="recommendations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Recommendations</p>
+      <h2>What people say.</h2>
+    </div>
+    <figure class="rec reveal">
+      <blockquote>“Cristian is the kind of leader who pushes you out of your comfort zone so you can show what you're actually capable of. He was the first step in a professional growth that hasn't stopped since.”</blockquote>
+      <figcaption>
+        <span class="rec-name">Sara Marcela Mesa Gómez</span>
+        <span class="rec-role">HR Projects · Talent &amp; Organizational Strategy · People Analytics</span>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
